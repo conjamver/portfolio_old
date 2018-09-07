@@ -23,7 +23,34 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Connor Vernon</title>
 </head>
+<script>
+//Animate the scrolling
+$( document ).ready(function() {
+    $('#btn-link1').click(function(){
+        $("html, body").animate({ scrollTop: $("#article-capstone").height() }, 600);                  
+    });
+});
+</script>    
+    
 <body>
+    <!--NAVIGATION-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+  <a class="navbar-brand" href="index.html">Portfolio</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" id="btn-link1" href="#">Capstone Project (In Progress)</a>
+      </li>
+    </ul>
+  </div>
+    </div> 
+</nav>
+  
     <!-- Introduction -->
     <article id="article-welcome">
         <div class="container text-center">
@@ -90,12 +117,16 @@
                 <p>Throughout the course of this project, it has had a strong impact on my communication skills. Voice call meetings were conducted atleast once every week to ensure how the team was going with the current sprint. My contribution to the meetings were discussing ideas that may help the website, following up the progress of website and what tasks that needed to be completed.
                 </p>
                 
-                <p>Throughout the course of this project, it has had a strong impact on my communication skills. Voice call meetings were conducted atleast once every week to ensure how the team was going with the current sprint. My contribution to the meetings were discussing ideas that may help the website, following up the progress of website and what tasks that needed to be completed.
-                </p>
-               
             </div>
             </div>
         </div>
     </article>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            &copy; Copyright 2018<br>
+            Icons by Font Awesome
+        </div>
+    </footer>
 </body>
 </html>
