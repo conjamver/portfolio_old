@@ -26,14 +26,35 @@
 <script>
 //Animate the scrolling
 $( document ).ready(function() {
-    $('#btn-link1').click(function(){
-        $("html, body").animate({ scrollTop: $("#article-capstone").height() }, 600);                  
+      $('#btn-link1').click(function(){
+        $("html, body").animate({ scrollTop: $("#article-welcome").offset().top }, 600);                  
     });
+    $('#btn-link2').click(function(){
+        $("html, body").animate({ scrollTop: $("#article-capstone").offset().top }, 600);                  
+    });
+    
+$(function () {
+  var lastScrollTop = 0;
+  var $navbar = $('.navbar');
+
+  $(window).scroll(function(event){
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) { 
+      $navbar.stop().fadeOut()
+    } else {  
+      $navbar.stop().fadeIn()
+    }
+    lastScrollTop = st;
+  });
 });
+    
+});
+    
+
 </script>    
     
-<body>
-    <!--NAVIGATION-->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--NAVIGATION-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
   <a class="navbar-brand" href="index.html">Portfolio</a>
@@ -43,8 +64,11 @@ $( document ).ready(function() {
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+        <a class="nav-link" id="btn-link1" href="#article-welcome">About me</a>
+      </li>
       <li class="nav-item">
-        <a class="nav-link" id="btn-link1" href="#">Capstone Project (In Progress)</a>
+        <a class="nav-link" id="btn-link2" href="#article-capstone">Capstone Project</a>
       </li>
     </ul>
   </div>
@@ -59,8 +83,13 @@ $( document ).ready(function() {
                 <small>
                     Computer Science student who is passionant about web development
                 </small>
-            </h1>
+            </h1>     
+                <p>My passion for Web Development began when one of my first websites was showcased at the Melbourne Museum for VCE Top Designs 2015. A subject I enjoyed at University was my capstone project where I had the role as UX/UI developer and had to design a beauty website for an actual client. I became more experienced when I did placement as a Front-End Developer at the Institute of Physical Activity and Nutrition. It gave me practical experience conducting user panels and building prototypes.</p>
             <hr>
+        </div>
+        </article>
+    <article id="article-skills">
+        <div class="container">
             <div class="row" class="">
                 <div class="col-md-6 text-left">
                     <h4><i class="fas fa-code"></i> Technical Skills</h4>
@@ -87,6 +116,10 @@ $( document ).ready(function() {
             </div>
         </div>
     </article>
+
+        
+
+   
     <!-- SIT302 - Project Devivery - Intro -->
     <article id="article-capstone">
         <div class="container text-center">
@@ -106,7 +139,7 @@ $( document ).ready(function() {
             <div class="col-md-6">
                 <figure class="figure">
                     <img class="img-fluid rounded figure-img" src="https://via.placeholder.com/500x400">
-                    <figcaption class="" style="color:">A caption for the above image.</figcaption>
+                    <figcaption class="figure-caption">A snippet of the homepage which features a customised Bootstrap 4 slideshow and the use of cards for outlining the website's features</figcaption>
                 </figure>
             </div>
             </div>

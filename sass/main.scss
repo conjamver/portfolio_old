@@ -4,18 +4,43 @@ $white: #ecf0f1;
 $light-grey: #ecf0f1;
 $dark-grey: #95a5a6;
 $light-black: #2d3436;
+$caption: #2c3e50;
 
+body{
+    padding-top:54px;
+}
 
 #article-welcome{
     background-color:$primary;
     color:$white;
-    padding:8% 0;
+    padding:2% 0;
+}
+
+#article-skills{
+    
+    color:$white;
+    padding:2% 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/bg_computer.jpg');
+    
+    /* Set a specific height */
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #article-capstone{
     background-color:$secondary;
     color:$white;
     padding:2% 0;
+}
+
+.figure-caption{
+    color: $caption;
+    
 }
 
 
