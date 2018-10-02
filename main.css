@@ -23,11 +23,24 @@ body {
   padding: 2% 0; }
 
 .figure-caption {
-  color: #2c3e50; }
+  color: #2c3e50;
+  transition: 0.15s; }
 
 footer {
   background-color: #34495e;
   color: #ecf0f1;
   padding: 2% 0; }
+
+footer a {
+  color: #ecf0f1; }
+
+footer i {
+  font-size: 48px;
+  transition: 0.15s; }
+
+footer i:hover {
+  transition: 0.15s;
+  cursor: pointer;
+  color: #bdc3c7; }
 
 /*# sourceMappingURL=main.css.map */
