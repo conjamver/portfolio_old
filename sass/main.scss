@@ -9,6 +9,8 @@ $caption: #2c3e50;
 $hover:0.15s;
 $footer-icon: 48px;
 
+@import 'font';
+
 body{
     padding-top:54px;
 }
@@ -24,15 +26,12 @@ body{
     color:$white;
     padding:2% 0;
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/bg_computer.jpg');
-    
-    /* Set a specific height */
-    
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 #article-capstone{
@@ -45,8 +44,14 @@ body{
     color: $caption;
     transition:$hover;
 }
+#profileImage{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
 
-
+a{
+    color:$white;
+}
 
 
 footer{
@@ -66,4 +71,9 @@ footer i:hover{
     transition:$hover;
     cursor:pointer;
     color:#bdc3c7;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
