@@ -22,6 +22,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Connor Vernon</title>
+     <link rel="shortcut icon" type="image/png" href="img/Logo.png">
 </head>
 <script>
 //Animate the scrolling
@@ -31,6 +32,9 @@ $( document ).ready(function() {
     });
     $('#btn-link2').click(function(){
         $("html, body").animate({ scrollTop: $("#article-capstone").offset().top }, 600);                  
+    });
+    $('#btn-link3').click(function(){
+        $("html, body").animate({ scrollTop: $("#article-placement").offset().top }, 600);                  
     });
     
 $(function () {
@@ -57,7 +61,9 @@ $(function () {
 <!--NAVIGATION-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-  <a class="navbar-brand" href="index.html">Portfolio</a>
+  <a class="navbar-brand" href="index.html">
+        <img src="img/logo_nav2.png"  alt="">
+        </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -69,6 +75,9 @@ $(function () {
       </li>
       <li class="nav-item">
         <a class="nav-link" id="btn-link2" href="#article-capstone">Capstone Project</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" id="btn-link3" href="#article-placement">IT Placement Project</a>
       </li>
     </ul>
   </div>
@@ -91,10 +100,10 @@ $(function () {
         </article>
     <article id="article-skills">
         <div class="container">
+            <!-- Skills Area -->
             <div class="row" class="">
                 <div class="col-md-6 text-left">
                     <h4><i class="fas fa-code"></i> Technical Skills</h4>
-                   
                     <ul class="">
                         <li>Proficient in front-end coding including HTML, CSS and JavaScript</li>
                         <li>Excellent background in web frameworks such as Bootstrap 4 and jQuery</li>
@@ -118,9 +127,7 @@ $(function () {
         </div>
     </article>
 
-        
 
-   
     <!-- SIT302 - Project Devivery - Intro -->
     <article id="article-capstone">
         <div class="container text-center">
@@ -255,6 +262,92 @@ $(function () {
                 </div>
             </div>
         </div>
+    </article>
+    <!--PLACEMENT PROJECT-->
+     <article id="article-placement">
+        <div class="container text-center">
+            <h1>SALVIO - IT Placement Project</h1>
+            <hr>
+            <div class="row">
+            <div class="col-md-6 text-justify">
+                <h4>Introduction</h4>
+                <p>
+                    My web development skills was furthur developed during the 3 to 4 months at the Institute of Physical Activity and Nutrition. The project called SAVLIO required me to design prototypes for a health based intervention platform for users who are suffering from diseases such as Cardiovascular disease. 
+                </p>
+                <h4>Assertion</h4>
+                <p>Similar to the role of my Capstone Project, being a front-end developer required me to design many prototypes. The difference is that it required many reiterations over the designs based off feedback during our daily meetings with the supervisor. Reiterations were also based off data from conducting the user panels which ensured that the usability of the interface was tailored to the older audience.
+                </p>
+                <ul>
+                    <li>Assertion A - Prototyping the user interface</li>
+                    <li>Assertion B - Communication and User Panels</li>
+                </ul>
+                </div>
+                <div class="col-md-6 text-justify">
+                    <figure class="figure">
+                    <img class="img-fluid figure-img rounded" src="img/salvio-dashboard.jpg">
+                    <figcaption class="figure-caption">A snippet of one of the prototype designs for the dashboard that represents health data.</figcaption>
+                </figure>
+                </div>
+            </div>
+            <!--ASSERTION A CONTENT -->
+            <div class="row">
+            <div class="col-md-6 order-lg-first order-md-first order-sm-last order-last text-justify">
+                       <!--ASSERTION A Image -->
+             <figure class="figure">
+                    <img class="img-fluid figure-img rounded" src="img/homePage.jpg">
+                    <figcaption class="figure-caption">A snippet of the create account page.</figcaption>
+                </figure>
+             
+                </div>
+                <div class="col-md-6 order-lg-last order-md-last order-sm-first order-first text-justify">
+                <h5>Assertion A</h5>
+                <p>
+                    Most of the work conducted during Placement involved designing many different types of user interfaces. The first interface involved having the illusion of a single page application by using jQuery functions for showing and hiding content. The issue discussed in the meetings was that the user could get lost as they navigated deeper. 
+                </p>
+                
+                <p>
+            An alternative approach to the single page application design was to animate the scroll of the page as a user clicked on a link. There were many reasons to go this approach as it gave visibility of how the user got from one point to another and it gives a sense of direction down to the goal. This was achieved using JavaScript to get a position of an element and then animating the scroll to that position as the user clicks on a link. 
+                </p>
+                
+                 <p>
+                    Overall, I gained experience in ways to animate navigation using JavaScript/jQuery as well as content manipulation of the DOM. The linear progression helps the user know where they travelled from on the web page. 
+                </p>
+                </div>
+            </div>
+            
+              <!--ASSERTION B CONTENT -->
+            <div class="row">
+            <div class="col-md-6 text-justify">
+                <h5>Assertion B</h5>
+                <p>
+                   User panels were conducted where we had our target audience come to participate in practical activities. The first activity involved having cut outs of popular icons used on the web and writing on the back of them. The next activity had the user commentate over the design aspects of similar websites and finally, the prototypes were shown to the user to see which one they like the most.
+                </p>
+                
+                <p>
+                  The user panel was an interesting experience for me as I got to see how a different group of users interpret design elements today. Most users did not know what the calendar icon meant because there were not enough days in the icon itself. This answer was considered in the final prototype design where the calendar Icon had to have a few tweaks. 
+                </p>
+                <p>
+                Overall, the user panel gave me insight on activities that I can use in the future. It challenged my communication skills by carefully structuring my questions into discrete choice models. 
+                </p>
+                
+                </div>
+                <div class="col-md-6 text-justify">
+                    <figure class="figure">
+                    <img class="img-fluid figure-img rounded" src="img/userpanel.jpg">
+                    <figcaption class="figure-caption">A snippet of some of the answers from the Icon Activity.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-justify">
+                    <h4>Summary</h4>
+                    <p> 
+                    My primary contribution to placement involved constructing prototypes based of research and design guidelines. In contrast to the capstone project, I explored many ways to incorporate JavaScript interactivity which helped me understand the HTML DOM structure. Being part of a user panel was a new challenge, but it has assisted me with communication and having attention to their ideas. I gained a better understanding of user panels from this experience.
+                    </p>
+                    
+                </div>
+            </div>
+         </div>
     </article>
     <!--footer-->
     <footer>
