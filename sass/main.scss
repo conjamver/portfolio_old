@@ -1,6 +1,7 @@
 $primary: #34495e;
 $secondary: #2980b9;
 $green: #27ae60;
+$red: #e74c3c;
 $white: #ecf0f1;
 $light-grey: #ecf0f1;
 $dark-grey: #95a5a6;
@@ -35,17 +36,25 @@ body{
     
 }
 
+#article-projects{
+    background-color: $white;
+    padding: 2% 0;
+}
+
 #article-capstone{
     background-color:$secondary;
     color:$white;
     padding:2% 0;
+    display:none;
 }
 
 #article-placement{
     background-color:$green;
     color:$white;
     padding:2% 0;
+    display:none;
 }
+
 
 .figure-caption{
     color: $caption;
@@ -83,4 +92,55 @@ footer i:hover{
 @keyframes fadeIn{
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+
+/*project cards*/
+#capstoneCard{
+    background-color:$secondary;
+    color:$white;
+    cursor: pointer;
+    transition:0.25s;
+}
+
+#capstoneCard:hover{
+    background-color:transparent;
+    color:$secondary;
+    border-color:$secondary;
+    cursor: pointer;
+    transition:0.25s;
+}
+
+#placementCard{
+    background-color:$green;
+    color:$white;
+    cursor: pointer;
+    transition:0.25s;
+}
+
+#placementCard:hover{
+    background-color:transparent;
+    color:$green;
+    border-color:$green;
+    cursor: pointer;
+    transition:0.25s;
+}
+#personalCard{
+    background-color:$red;
+    color:$white;
+    cursor: pointer;
+    transition:0.25s;
+}
+#personalCard:hover{
+    background-color:transparent;
+    color:$red;
+    border-color:$red;
+    cursor: pointer;
+    transition:0.25s;
+}
+
+.centerImage{
+    display:block;
+    margin:auto;
+    padding-top:0;
 }
