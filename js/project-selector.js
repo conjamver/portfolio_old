@@ -10,20 +10,28 @@ var personalSelector = $('#personalCard');
         if(placementArticle.css("display") != "none"){
             placementArticle.css("display","none");
         }
-         //toggle the slide function and then scroll to position
-        capstoneArticle.slideToggle(750);
-         $("html, body").animate({ scrollTop: $("#article-capstone").offset().top }, 600);
+         //We only want to animate scroll when display opens
+        if(capstoneArticle.css("display") === "none"){
+            capstoneArticle.slideToggle(750,'linear');
+            $("html, body").animate({ scrollTop: $("#article-capstone").offset().top }, 600);
+        }else{
+            capstoneArticle.slideToggle(750,'linear');
+        }
     });
     
-    //show or hide the article - PLACEMENT
+    //show or hide the article - PLACEMENT//
     placementSelector.click(function(){
         //hide an open article
         if(capstoneArticle.css("display") != "none"){
             capstoneArticle.css("display","none");
         }
-        //toggle the slide function and then scroll to position
-        placementArticle.slideToggle(750);
-        $("html, body").animate({ scrollTop: $("#article-placement").offset().top }, 600);
+        //We only want to animate scroll when display opens
+        if(placementArticle.css("display") === "none"){
+            placementArticle.slideToggle(750,'linear');
+            $("html, body").animate({ scrollTop: $("#article-placement").offset().top }, 600);
+        }else{
+           placementArticle.slideToggle(750,"linear"); 
+        }
     });
     
     //show or hide the article - PLACEMENT
