@@ -28,6 +28,7 @@
     <script src="js/project-selector.js"></script>
     <script src="js/animate-scroll.js"></script>
     <script src="js/scroll-nav.js"></script>
+    <script src="js/textarea-count.js"></script>
     
 </head>
    
@@ -110,7 +111,7 @@
     <article id="article-projects">
         <div class="container text-center">
             <!-- Details about how to view project -->
-            <h1><i class="fas fa-trophy"></i> My Projects<br>
+            <h1 id="projects-title"><i class="fas fa-trophy"></i> My Projects<br>
                 <small>Click on one of my projects below to view details</small>
             </h1>
                
@@ -379,9 +380,10 @@
     <article id="article-contact">
         <div class="container ">
             <div class="row">
-                <div class="col-md-6">
-                <h2>Contact Me</h2>
-                <p>If you like the work that you see, please shoot me a message.</p>
+                <div class="col-md-6 text-center">
+                <h2 class="text-left">  <i class="far fa-envelope" ></i> Contact Me</h2>
+                <p class="text-left">Do you like the work experience I have to offer? Please do not hesitate to contact me via the email form. </p>
+              
                 </div>
                  <!--Form section-->
                 <div class="col-md-6">
@@ -389,22 +391,22 @@
                          
                         <!--Email section-->
                         <div class="form-group">
-                            <label><strong>Enter your name:</strong></label>
-                            <input class="form-control" type="text" name="name" placeholder="Your name" maxlength="32">
+                            <label><strong>Name:</strong></label>
+                            <input class="form-control" type="text" name="name" placeholder="Enter your name" maxlength="32" required>
                         </div>
                         <div class="form-group">
-                            <label><strong>Enter your email:</strong></label>
-                            <input class="form-control" type="email" name="_replyto" placeholder="Your email" maxlength="64">
+                            <label><strong>Email:</strong></label>
+                            <input class="form-control" type="email" name="_replyto" placeholder="Enter your email" maxlength="64" required>
                         </div>
                         <!--Subject-->
-                        <div class="form-group">
-                            <label><strong>Subject:</strong></label>
-                            <input class="form-control" type="text" name="_subject" maxlength="100" placeholder="Your subject">
-                        </div>
+                        <input type="hidden" name="_subject" value="Portfolio Submission"/>
                          <!--Message Section-->
                         <div class="form-group">
-                            <label><strong>Message:</strong> </label>
-                            <textarea class="form-control" name="message" placeholder="Write your message here" maxlength="600"></textarea>
+                            <label><strong>Message:</strong></label>
+                            <textarea id="test" class="form-control" name="message" placeholder="Enter your message here" maxlength="600" required></textarea>
+                            
+                            <!--Count characters-->
+                            <span id="textarea-chars">600</span> characters remaining
                         </div>
                          <!--Submit button-->
                         <button type="submit" class="btn btn-primary">Submit</button>

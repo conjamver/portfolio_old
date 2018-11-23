@@ -83,6 +83,9 @@ footer{
 footer a{
    color:$white; 
 }
+footer a:hover{
+   color:$dark-grey; 
+}
 
 footer i{
     font-size: $footer-icon;
